@@ -25,19 +25,32 @@ The scrape-amazon.js script does the following:
 
 Please follow the below steps to run the Amazon product scraping code:
 
-Clone or Download the Repository: If you haven't already, download or clone the project from your Git repository.
+1.Clone or Download the Repository:
+Steps to follow for git cloning -
+* Use the below command to get the clone access, I have given PAT which is having repo read   access
+  git credential fill <<EOF
+  protocol=https
+  host=github.com
+  username=rakesh051199
+  password=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
+  EOF
+* git clone https://rakesh051199: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@github.com/rakesh051199/Scraping_Assignment.git
 
-Install Node.js: Make sure you have Node.js installed.
+After executing above 2 git commands, user should be able to see the Scraping_Assignment folder
+
+
+3.Install Node.js: Make sure you have Node.js installed.
 
 Navigate to the Project Directory: Open your terminal or command prompt and navigate to the directory where you've placed the scrape-amazon.js file.
+cd Scraping_Assignment
 
-Install Dependencies: Run the following command to install the necessary dependencies (Puppeteer): npm install
+4.Install Dependencies: Run the following command to install the necessary dependencies (Puppeteer): npm install
 
-Edit the URL (Optional): Open scrape-amazon.js in a text editor and replace the productURL variable with the URL of the Amazon product page you want to scrape.
+5.Edit the URL (Optional): Open scrape-amazon.js in a text editor and replace the productURL variable with the URL of the Amazon product page you want to scrape.
 
-Run the Script: Execute the following command to run the scraping script: node scrape-amazon.js
+6.Run the Script: Execute the following command to run the scraping script: node scrape-amazon.js
 
-Puppeteer will launch a headless browser, navigate to the specified Amazon product page, Take the screenshot of the product page and HTML content of the page, and save it in the above created foldername(folderName)
+7.Puppeteer will launch a headless browser, navigate to the specified Amazon product page, Take the screenshot of the product page and HTML content of the page, and save it in the above created foldername(folderName)
 
-Please note that I used asyncronous Immediately Invoked Function(IIF) to perform above steps,and handled exceptions/errors using try catch blocks.
+8.Please note that I used asyncronous Immediately Invoked Function(IIF) to perform above steps,and handled exceptions/errors using try catch blocks.
 
